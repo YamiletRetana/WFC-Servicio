@@ -1,0 +1,7 @@
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\bin\WCFServicio.dll.config
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\bin\WCFServicio.dll
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\bin\WCFServicio.pdb
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\obj\Debug\WCFServicio.csprojAssemblyReference.cache
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\obj\Debug\WCFServicio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\obj\Debug\WCFServicio.dll
+C:\Users\Juan Retana\source\repos\WCFServicio\WCFServicio\obj\Debug\WCFServicio.pdb
