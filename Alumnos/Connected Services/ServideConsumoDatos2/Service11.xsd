@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:12696/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServicio" />
+  <xs:element name="GetNumeroEmpleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trabajador" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNumeroEmpleadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServicio" minOccurs="0" name="GetNumeroEmpleadoResult" nillable="true" type="q1:Empleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObtenerPelicula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Pelicula" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObtenerPeliculaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServicio" minOccurs="0" name="GetObtenerPeliculaResult" nillable="true" type="q2:Pelicula" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObtenerAlumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Alumno" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObtenerAlumnoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCFServicio" minOccurs="0" name="GetObtenerAlumnoResult" nillable="true" type="q3:Escuela" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

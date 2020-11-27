@@ -1,0 +1,7 @@
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\bin\WCFServicio.dll.config
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\bin\WCFServicio.dll
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\bin\WCFServicio.pdb
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\obj\Debug\Consumo de WEBServer.csproj.CoreCompileInputs.cache
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\obj\Debug\WCFServicio.dll
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\obj\Debug\WCFServicio.pdb
+C:\Users\Juan Retana\source\repos\WCFServicio - copia\WCFServicio\obj\Debug\Consumo de WEBServer.csprojAssemblyReference.cache

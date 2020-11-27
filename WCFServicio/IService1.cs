@@ -18,16 +18,23 @@ namespace WCFServicio
         Empleado GetNumeroEmpleado(string trabajador);
 
         [OperationContract]
-        Pelicula GetObtenerPelicula(int Pelicula);
+        double conversionDolares(double dolares);
+
+        [OperationContract]
+        int GetSuma(int a, int b, int c);
+
+        [OperationContract]
+        Numeros GetObtenerSuma(int Pelicula);
 
         [OperationContract]
         Escuela GetObtenerAlumno(int Alumno);
+
 
         // TODO: agregue aquí sus operaciones de servicio
     }
     // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
     [DataContract]//Cliente GetNumeroControl
-    public class Empleado: Respuesta
+    public class Empleado : Respuesta
     {
         [DataMember]
         public string Nombre { get; set; }
@@ -54,28 +61,26 @@ namespace WCFServicio
 
         [DataMember]
         public string Curso { get; set; }
-
         [DataMember]
         public string Especialidad { get; set; }
+        [DataMember]
+        public string Promedio { get; set; }
     }
 
-    [DataContract]//Pelicula getobtenerpelicula
-    public class Pelicula : Respuesta3
+    [DataContract]//Suma suma numeros
+    public class Numeros : Respuesta3
     {
         [DataMember]
-        public string Nombre { get; set; }
+        public string Numero1 { get; set; }
         [DataMember]
-        public string Codigo { get; set; }
+        public string Numero2 { get; set; }
 
         [DataMember]
-        public string Clasificacion { get; set; }
+        public string Numero3 { get; set; }
 
-        [DataMember]
-        public string Duracion { get; set; }
-
-        [DataMember]
-        public String Director { get; set; }
     }
+
+    
     [DataContract]
     public class Respuesta
     {
@@ -94,3 +99,4 @@ namespace WCFServicio
         public string Error3 { get; set; }
     }
 }
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServicio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServicio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Empleado">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Respuesta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApellidoM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApellidoP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Puesto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Salarario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Empleado" nillable="true" type="tns:Empleado" />
+  <xs:complexType name="Respuesta">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="Respuesta" nillable="true" type="tns:Respuesta" />
+  <xs:complexType name="Pelicula">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Respuesta3">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Clasificacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Director" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Duracion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Pelicula" nillable="true" type="tns:Pelicula" />
+  <xs:complexType name="Respuesta3">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="Respuesta3" nillable="true" type="tns:Respuesta3" />
+  <xs:complexType name="Escuela">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Respuesta2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AP_Materno" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AP_Paterno" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Curso" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Especialidad" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Escuela" nillable="true" type="tns:Escuela" />
+  <xs:complexType name="Respuesta2">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="Respuesta2" nillable="true" type="tns:Respuesta2" />
+</xs:schema>

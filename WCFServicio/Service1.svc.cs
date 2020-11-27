@@ -36,53 +36,60 @@ namespace WCFServicio
             }
         }
 
-        public Pelicula GetObtenerPelicula(int Pelicula)//pelicula es nuestro identificador
+        public Numeros GetObtenerSuma(int numero)//numero es nuestro identificado
+
         {
-            if (Pelicula == 1)
-            {
-                return new Pelicula() { Nombre = "Buscando a Nemo", Codigo = "10001", Clasificacion = "A", Duracion = "120", Director = "Martin Scorsese"};
-            }
-            if (Pelicula == 2)
-            {
-                return new Pelicula() { Nombre = "Dumbo", Codigo = "10002", Clasificacion = "A", Duracion = "130", Director = "Stanley Kubrick" };
-            }
-            if (Pelicula == 3)
-            {
-                return new Pelicula() { Nombre = "Toy Story", Codigo = "10003", Clasificacion = "A", Duracion = "160", Director = "Steve Spielberg" };
-            }
-            if (Pelicula == 4)
-            {
-                return new Pelicula() { Nombre = "Cenicienta", Codigo = "10004", Clasificacion = "A", Duracion = "90", Director = "Alfred Hitchock" };
-            }
-            else
-            {
-                return new Pelicula() { Error3 = "Error 1. Los datos no coinciden en la busqueda del sistema" };
-            }
-                 
+                if (numero == 1)
+                {
+                    return new Numeros() { Numero1 = "15", Numero2 = "100", Numero3 = "27" };
+                }
+                if (numero == 2)
+                {
+                    return new Numeros() { Numero1 = "1745", Numero2 = "10", Numero3 = "97" };
+                }
+                if (numero == 3)
+                {
+                    return new Numeros() { Numero1 = "362", Numero2 = "10", Numero3 = "97" };
+                }
+                else
+                {
+
+                    return new Numeros() { Error3 = "Error 1. Los datos no coinciden en la busqueda del sistema" };
+                }
         }
 
         public Escuela GetObtenerAlumno(int Alumno)//alumno es nuestro identificador
         {
             if (Alumno == 17030103)
             {
-                return new Escuela() { Nombre = "Yamilet", AP_Paterno = "Retana", AP_Materno= "Hernandez", Curso ="7", Especialidad= "Informatica" };
+                return new Escuela() { Nombre = "Yamilet", AP_Paterno = "Retana", AP_Materno = "Hernandez", Curso = "7", Especialidad = "Informatica", Promedio = "10" };
             }
             if (Alumno == 17030104)
             {
-                return new Escuela() { Nombre = "Fernando", AP_Paterno = "Vasquez", AP_Materno = "Sandoval", Curso = "4", Especialidad = "Mecatronica" };
+                return new Escuela() { Nombre = "Fernando", AP_Paterno = "Vasquez", AP_Materno = "Sandoval", Curso = "4", Especialidad = "Mecatronica", Promedio = "9.0" };
             }
             if (Alumno == 17030105)
             {
-                return new Escuela() { Nombre = "Gabriela", AP_Paterno = "Gramillo", AP_Materno = "Vaquera", Curso = "2", Especialidad = "Administracion" };
+                return new Escuela() { Nombre = "Gabriela", AP_Paterno = "Gramillo", AP_Materno = "Vaquera", Curso = "2", Especialidad = "Administracion", Promedio = "8.5" };
             }
             if (Alumno == 17030106)
             {
-                return new Escuela() { Nombre = "Jaquline", AP_Paterno = "Fernandez", AP_Materno = "Maldonado", Curso = "8", Especialidad = "Industrial" };
+                return new Escuela() { Nombre = "Jaquline", AP_Paterno = "Fernandez", AP_Materno = "Maldonado", Curso = "8", Especialidad = "Industrial", Promedio = "7.0" };
             }
             else
             {
                 return new Escuela() { Error2 = "Error 1. No se ha encontrado al Usuario" };
             }
+        }
+
+        public double conversionDolares(double dolares)
+        {
+            return dolares * 20.75;
+        }
+
+        public int GetSuma(int a, int b, int c)
+        {
+            return a + b + c;
         }
     }
 }
